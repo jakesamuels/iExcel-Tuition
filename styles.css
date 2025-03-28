@@ -3,3 +3,70 @@
   margin: 0;
   padding: 0;
 }
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  width: 87.2%;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* ==========
+ HEADER
+ ========== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -20px;
+}
+
+.logo {
+  width: 100%;
+  min-width: 100px;
+  max-width: 150px;
+}
+
+.btn__toggle-menu {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: url("./images/menu-icon.png");
+  background-size: cover;
+}
+
+.dropdown-menu {
+  position: relative;
+}
+
+ul.mobile-nav {
+  position: absolute;
+  right: 0;
+  top: 150%;
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.125rem;
+  list-style: none;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  width: 200px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+ul.mobile-nav li a {
+  color: #000;
+  text-decoration: none;
+}
